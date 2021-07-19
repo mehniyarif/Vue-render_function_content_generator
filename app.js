@@ -73,7 +73,7 @@ app.component('generator',{
                         if(item.tag){
                             result += `h("${item.tag}", ${this.attrGenerate(item.attrs)} ["${item.content} "])${last ? " ": ", \n"} `
                         }else{
-                            result += `"${item.content}${last ? " ": ", \n"} "`
+                            result += `"${item.content}"${last ? " ": ", "}`
                         }
                     }
             }
@@ -273,7 +273,7 @@ app.component('generator',{
     },
     data(){
         return {
-            tags:["","b","p","span","ol","ul",'li',"h1","h2","h3","h4","h5","h6","a","small","i","q","sub","sup","s","mark","u"],
+            tags:["","b","p","span","ol","ul",'li',"h1","h2","h3","h4","h5","h6","a","small","i","q","sub","sup","s","mark","u","BasicTable"],
             disableTags:["ol","ul"],
             attributeNames:["id","href","type","class","disabled","for","title","start"],
             styleTags:["b","i","a","q","sub","sup","s","mark","u"],
