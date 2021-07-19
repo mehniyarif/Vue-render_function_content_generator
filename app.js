@@ -273,7 +273,7 @@ app.component('generator',{
     },
     data(){
         return {
-            tags:["","b","p","span","ol","ul",'li',"h1","h2","h3","h4","h5","h6","a","small","i","q","sub","sup","s","mark","u","BasicTable"],
+            tags:["","b","p","span","ol","ul",'li',"h1","h2","h3","h4","h5","h6","a","small","i","q","sub","sup","s","mark","u"],
             disableTags:["ol","ul"],
             attributeNames:["id","href","type","class","disabled","for","title","start"],
             styleTags:["b","i","a","q","sub","sup","s","mark","u"],
